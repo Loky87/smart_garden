@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SmartGarden</class>
+ <widget class="QMainWindow" name="SmartGarden">
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>280</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Zalijevanje vrta</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    background-color: #1E1E1E;
+    color: #CFCFCF;
+    font: 11pt "Arial";
+   </string>
+  </property>
+
+  <widget class="QWidget" name="widget">
+   <widget class="QWidget" name="Layout1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>260</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="Layout2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="temperatura">
+       <property name="text">
+        <string>Temperatura: -- °C</string>
+       </property>
+       <property name="styleSheet">
+        <string>
+         font: bold 12pt "Arial"; 
+         color: #B0BEC5;
+         border: 1px solid #3C3F41;
+         padding: 5px;
+         border-radius: 5px;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="vlaznost_zraka">
+       <property name="text">
+        <string>Vlažnost zraka: -- %</string>
+       </property>
+       <property name="styleSheet">
+        <string>
+         font: bold 12pt "Arial"; 
+         color: #B0BEC5;
+         border: 1px solid #3C3F41;
+         padding: 5px;
+         border-radius: 5px;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="vlaznost_tla">
+       <property name="text">
+        <string>Vlažnost tla: -- %</string>
+       </property>
+       <property name="styleSheet">
+        <string>
+         font: bold 12pt "Arial"; 
+         color: #B0BEC5;
+         border: 1px solid #3C3F41;
+         padding: 5px;
+         border-radius: 5px;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="kisa">
+       <property name="text">
+        <string>Vjerojatnost kiše: --%</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="styleSheet">
+        <string>
+         font: bold 12pt "Arial"; 
+         color: #B0BEC5;
+         border: 1px solid #3C3F41;
+         padding: 5px;
+         border-radius: 5px;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="zalijevanje">
+       <property name="text">
+        <string>Ručna kontrola zalijevanja</string>
+       </property>
+       <property name="styleSheet">
+        <string>
+         font: bold 12pt "Arial"; 
+         background-color: #3C3F41; 
+         color: white; 
+         border-radius: 5px; 
+         padding: 8px;
+         border: 1px solid #555;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="status">
+       <property name="text">
+        <string>Status zalijevanja: Isključeno</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="styleSheet">
+        <string>
+         font: bold 12pt "Arial"; 
+         color: #FFD700;
+         border: 1px solid #3C3F41;
+         padding: 5px;
+         border-radius: 5px;
+        </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  
+  <widget class="QStatusBar" name="widgetstatus"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
